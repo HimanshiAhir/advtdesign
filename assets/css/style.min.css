@@ -41,7 +41,7 @@ a{
     align-items: center;
 }
 .ad-logo-wrap{
-    max-width: 64px;
+    width: 64px;
 }
 .ad-logo-wrap img{
     width: 100%;
@@ -807,7 +807,7 @@ input[type="submit"]{
         padding: 10px 12px;
     }
     .ad-logo-wrap{
-        max-width: 48px;
+        width: 48px;
     }
     .ad-header .ad-contact-wrap{
         display: none;
