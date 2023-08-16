@@ -447,7 +447,7 @@ a{
     background-color: var(--color-bg);
 }
 
-.ad-approach-section .ad-row,.ad-container .ad-row{
+.ad-approach-section .ad-row,.ad-contact-section .ad-row{
     margin-bottom: 120px;
     align-items: flex-start;
     gap: 42px 64px;
@@ -569,7 +569,6 @@ a{
     position: relative;
     width: 100%;
     max-width: 580px;
-    margin-top: 200px;
 }
 .ad-contact-form{
     width: 100%;
@@ -751,9 +750,10 @@ input[type="submit"]{
     font-size: 14px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 12px 24px;
 }
 .ad-copyright-wrap a{
     color: var(--color-primary);
@@ -782,6 +782,12 @@ input[type="submit"]{
     .ad-approach-item{
         width: calc(50% - 24px);
     }
+    .ad-contact-card{
+        padding: 20px;
+    }
+    .ad-contact-section .ad-row{
+        margin-bottom: 42px;
+    }
 }
 @media(min-width:1201px){
     .ad-service-list li:hover{
@@ -799,6 +805,9 @@ input[type="submit"]{
     }
     .ad-approach-item{
         width: calc(33.33% - 32px);
+    }
+    .ad-contact-card{
+        margin-top: 200px;
     }
 }
 @media(max-width:600px){
@@ -831,6 +840,20 @@ input[type="submit"]{
     }
     .pre-para-art{
         width: 72px;
+    }
+    .ad-copyright-wrap{
+        justify-content: flex-start;
+    }
+    .ad-copyright-wrap span{
+        width: 100%;
+        text-align: left;
+    }
+    .ad-copyright-wrap a{
+        width: max-content;
+        text-align: left;
+    }
+    .ad-copyright-wrap span{
+        order: 3;
     }
 }
 @media(max-width:768px){
